@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #2e323f;
+    backdrop-filter: blur(2px);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #e9e4e4;
+    height: 100vh;
+}
+.shop-cart {
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: rgb(221, 218, 218);
+    border-radius: 15px;
+    width: 70px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.shop-cart:hover {
+    background-color: #0b8627;
+    color: #f5f3f3;
+}
+.shopping-list {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    height: 400px;
+    width: 300px;
+    background-color: #1f1f1ff1;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    transition: all 0.3s  ease;
+    border: 1px solid #f5f3f3;
+}
+.title {
+    font-size: 1.5rem;
+}
+.price {
+    font-size: 1.5rem;
+}
+.shopping-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.shopping-list ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid #f5f3f3;
+}
+.shopping-list ul li:nth-last-child(1) {
+    border: none;
+}
+.animate {
+    animation: bounce 0.5s ease;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
